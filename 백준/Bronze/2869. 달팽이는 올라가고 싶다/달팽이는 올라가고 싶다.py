@@ -1,3 +1,10 @@
 a,b,v = map(int,input().split())
+
 k = (v-b)/(a-b)
-print(int(k) if k == int(k) else int(k)+1)
+
+if k == int(k):
+    answer = int(k)
+else:
+    answer = int(k)+1
+    
+print(answer)
